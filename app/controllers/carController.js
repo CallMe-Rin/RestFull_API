@@ -14,7 +14,7 @@ module.exports = {
         ...carDatas,
         picture_url,
       };
-      Car.create(data); //dari Class Car
+      Car.create(data); 
       res.status(201).json({
         message: "Success Add Data!",
       });
@@ -24,7 +24,7 @@ module.exports = {
   },
 
   getAllCar: function (req, res) {
-    let cars = Car.list(); //gunain method class Car
+    let cars = Car.list(); 
     res.status(200).json({
       message: "Success Get All Car!",
       data: cars,
